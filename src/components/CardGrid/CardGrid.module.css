@@ -1,0 +1,44 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px 0;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.groupLabel {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+  margin: 0;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.count {
+  font-weight: 400;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #888;
+  font-size: 1.1rem;
+}

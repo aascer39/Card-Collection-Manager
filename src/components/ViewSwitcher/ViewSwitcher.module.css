@@ -1,0 +1,32 @@
+.switcher {
+  display: flex;
+  gap: 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: #e8e8e8;
+  color: #444;
+}
+
+.btn.active {
+  background: #2196f3;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.3);
+}

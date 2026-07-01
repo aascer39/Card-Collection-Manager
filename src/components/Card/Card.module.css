@@ -1,0 +1,74 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100px;
+  height: 140px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.uncollected {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.collected {
+  background: linear-gradient(145deg, #e8f5e9, #c8e6c9);
+  border: 2px solid #66bb6a;
+  box-shadow: 0 2px 8px rgba(102, 187, 106, 0.3);
+}
+
+.selected {
+  border-color: #2196f3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.4), 0 4px 12px rgba(33, 150, 243, 0.2);
+}
+
+.selected.collected {
+  border-color: #2196f3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.4), 0 4px 12px rgba(33, 150, 243, 0.2);
+}
+
+.rank {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.suit {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.name {
+  font-size: 0.6rem;
+  color: #666;
+  text-align: center;
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selectionBadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #2196f3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.4);
+}
