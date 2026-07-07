@@ -7,9 +7,9 @@ import styles from './CardGrid.module.css';
 
 const SUIT_LABELS: Record<string, string> = {
   spade: '♠ 黑桃',
-  heart: '♥ 红心',
+  heart: '♥ 红桃',
   club: '♣ 梅花',
-  diamond: '♦ 方块',
+  diamond: '♦ 方片',
   box: '📦 牌盒',
 };
 

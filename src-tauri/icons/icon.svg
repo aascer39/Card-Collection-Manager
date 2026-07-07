@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0ebe3"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Background rounded rect (app icon shape) -->
+  <rect width="1024" height="1024" rx="200" fill="#1a1a2e"/>
+  <!-- Card body -->
+  <rect x="162" y="112" width="700" height="800" rx="48" fill="url(#cardBg)" filter="url(#shadow)" transform="rotate(6, 512, 512)"/>
+  <!-- Heart suit -->
+  <g transform="translate(280, 310)">
+    <path d="M0 40 C-30 -20, -120 -60, -100 -140 C-85 -195, -30 -200, 0 -160 C30 -200, 85 -195, 100 -140 C120 -60, 30 -20, 0 40Z" fill="#e74c3c"/>
+  </g>
+  <!-- Spade suit -->
+  <g transform="translate(512, 670)">
+    <path d="M0 -160 C120 -60, 160 0, 80 80 C60 100, 20 110, 0 100 C-20 110, -60 100, -80 80 C-160 0, -120 -60, 0 -160Z" fill="#1a1a2e"/>
+    <rect x="-15" y="85" width="30" height="40" rx="4" fill="#1a1a2e"/>
+  </g>
+  <!-- Decorative line -->
+  <line x1="232" y1="790" x2="792" y2="790" stroke="#ddd" stroke-width="2" stroke-linecap="round" transform="rotate(6, 512, 512)"/>
+</svg>

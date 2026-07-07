@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "🃏 Card Collection Manager",
+        "title": "卡牌收藏管理器",
         "width": 1200,
         "height": 800,
         "resizable": true,
@@ -24,8 +24,8 @@
     }
   },
   "bundle": {
-    "active": true,
-    "targets": "nsis",
+    "active": false,
+    "targets": [],
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",

@@ -29,6 +29,10 @@ fn init_database(conn: &Connection) -> Result<(), rusqlite::Error> {
         );"
     )?;
 
+    // Migrate old suit names to new ones
+    conn.execute("UPDATE cards SET name = REPLACE(name, '红心', '红桃') WHERE name LIKE '%红心%'", [])?;
+    conn.execute("UPDATE cards SET name = REPLACE(name, '方块', '方片') WHERE name LIKE '%方块%'", [])?;
+
     // Check if data already exists
     let count: i64 = conn.query_row("SELECT COUNT(*) FROM cards", [], |row| row.get(0))?;
     if count == 0 {
@@ -41,7 +45,7 @@ fn init_database(conn: &Connection) -> Result<(), rusqlite::Error> {
 fn insert_initial_data(conn: &Connection) -> Result<(), rusqlite::Error> {
     let suits = ["spade", "heart", "club", "diamond"];
     let ranks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-    let suit_names = ["黑桃", "红心", "梅花", "方块"];
+    let suit_names = ["黑桃", "红桃", "梅花", "方片"];
 
     for (suit_idx, suit) in suits.iter().enumerate() {
         for rank in &ranks {

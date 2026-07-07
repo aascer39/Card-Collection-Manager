@@ -15,7 +15,7 @@ export function HomePage() {
     return (
       <div className={styles.page}>
         <header className={styles.header}>
-          <h1>{'🃏'} 卡牌收藏管理器</h1>
+          <h1>卡牌收藏管理器</h1>
         </header>
         <div className={styles.errorState}>
           <p className={styles.errorText}>加载卡牌出错：{error}</p>
@@ -30,7 +30,7 @@ export function HomePage() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <h1>{'🃏'} 卡牌收藏管理器</h1>
+        <h1>卡牌收藏管理器</h1>
       </header>
       <Toolbar />
       <main className={styles.main}>
